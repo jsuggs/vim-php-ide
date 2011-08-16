@@ -23,7 +23,7 @@ let mapleader = ','
 map <Leader>t :CommandT /var/www/opensky/src/OpenSky<CR>
 
 " PHP specific commands
-autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php -f %<CR>
+autocmd FileType php noremap <C-X> :w!<CR>:!/usr/bin/php -f %<CR>
 autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
 " OpenSky Tags
