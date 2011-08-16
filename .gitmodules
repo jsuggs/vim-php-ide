@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/findfile"]
 	path = .vim/bundle/findfile
 	url = git://github.com/statico/FindFile.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
