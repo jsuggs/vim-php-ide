@@ -16,6 +16,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Do better syntax highlighting for twig templates
+autocmd BufRead *.twig set syntax=htmljinja
+
 " Remap the leader
 let mapleader = ','
 
