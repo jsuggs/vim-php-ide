@@ -91,6 +91,10 @@ vnoremap <C-P> :call PhpDocRange()<CR>
     "map <C-t><right> :tabn<CR>
 " }
 
+" taglist {
+    nnoremap <silent> <F8> :TlistToggle<CR>
+"  }
+
 " Formatting {
     set nowrap                     " wrap long lines
     set autoindent                 " indent at the same level of the previous line
