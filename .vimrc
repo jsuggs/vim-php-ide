@@ -34,6 +34,18 @@ map <Leader>t :CommandT /var/www/opensky/src/OpenSky<CR>
 autocmd FileType php noremap <C-X> :w!<CR>:!/usr/bin/php -f %<CR>
 autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
+" Be able to toggle the mouse on/off (for copying and pasting)
+nnoremap <F12> :call ToggleMouse()<CR>
+function! ToggleMouse()
+  if &mouse == 'a'
+    set mouse=r
+    echo "Mouse usage disabled"
+  else
+    set mouse=a
+    echo "Mouse usage enabled"
+  endif
+endfunction
+
 " OpenSky Tags
 set tags=~/.vim/tags
 
