@@ -24,6 +24,9 @@ let g:path_to_search_app = "/usr/bin/ack-grep"
 " Do better syntax highlighting for twig templates
 autocmd BufRead *.twig set syntax=htmljinja
 
+" Make the taglist on the right side
+let Tlist_Use_Right_Window = 1
+
 " Remap the leader
 let mapleader = ','
 
