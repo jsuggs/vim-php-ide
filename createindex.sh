@@ -2,13 +2,14 @@
 
 cd /var/www/opensky
 
-ctags-exuberant -f ~/vim-php-ide/.vim/tags \
+ctags-exuberant -f tags \
 -h ".php" -R \
 --exclude="\.svn" \
 --exclude="\.git" \
+--exclude="*\.js" \
+--exclude="*\.html" \
 --totals=yes \
 --tag-relative=yes \
---PHP-kinds=+cf \
+--PHP-kinds=+icdf \
 --regex-PHP='/abstract class ([^ ]*)/\1/c/' \
---regex-PHP='/interface ([^ ]*)/\1/c/' \
---regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'
+--regex-PHP='/(public\s+|static\s+|abstract\s+|protected\s+|private\s+)function\s+([^ (]*)/\2/f/'

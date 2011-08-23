@@ -55,7 +55,19 @@ set pastetoggle=<F2>
 set showmode
 
 " OpenSky Tags
-set tags=~/.vim/tags
+"set tags=~/.vim/tags
+"set tags=tags;/
+set tags=./tags,./../tags,./*/tags,/var/www/opensky/tags
+map <Leader>m :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+
+"--------------------
+" Function: Remap keys to make it more similar to firefox tab functionality
+" Purpose:  Because I am familiar with firefox tab functionality
+"--------------------
+map     <C-T>       :tabnew<CR>
+map     <C-N>       :!gvim &<CR><CR>
+map     <C-W>       :confirm bdelete<CR>
 
 " UI {
     set number
