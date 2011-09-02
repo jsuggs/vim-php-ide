@@ -68,6 +68,7 @@ map <Leader>m :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map     <C-T>       :tabnew<CR>
 map     <C-N>       :!gvim &<CR><CR>
 map     <C-W>       :confirm bdelete<CR>
+set tabpagemax=50
 
 " UI {
     set number
