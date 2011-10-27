@@ -38,7 +38,7 @@ autocmd FileType php noremap <C-X> :w!<CR>:!/usr/bin/php -f %<CR>
 autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
 " Be able to toggle the mouse on/off (for copying)
-nnoremap <F12> :call ToggleMouse()<CR>
+nnoremap <Leader>p :call ToggleMouse()<CR>
 function! ToggleMouse()
   if &mouse == 'a'
     set mouse=r
@@ -49,9 +49,12 @@ function! ToggleMouse()
   endif
 endfunction
 
+" Buffer commands
+nnoremap <C-L> :buffers<CR>:buffer<Space>
+
 " Toggle paste mode
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+"nnoremap <F2> :set invpaste paste?<CR>
+"set pastetoggle=<F2>
 set showmode
 
 " OpenSky Tags
@@ -98,9 +101,9 @@ set tabpagemax=50
     "autocmd VimEnter * NERDTree
     "autocmd BufEnter * NERDTreeMirror
 
-    map <f5> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
-    map <f6> :NERDTreeFind<CR>
-    nmap <leader>nt :NERDTreeFind<CR>
+    map <Leader>f :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+    "map <f6> :NERDTreeFind<CR>
+    "nmap <leader>nt :NERDTreeFind<CR>
     
     let NERDTreeShowBookmarks=1
     let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
@@ -118,14 +121,16 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 " }
 " Tabs {
     set showtabline=2
-    "map <C-t><up> gT
-    "map <C-t><down> gt
-    "map <C-t><left> :tabp<CR>
-    "map <C-t><right> :tabn<CR>
+    map <C-t><up> gT
+    map <C-t><down> gt
+    map <C-t><left> :tabp<CR>
+    map <C-t><right> :tabn<CR>
+    map <C-S-tab> :tabprevious<CR>
+    map <C-tab> :tabnext<CR>
 " }
 
 " taglist {
-    nnoremap <silent> <F8> :TlistToggle<CR>
+    "nnoremap <silent> <F8> :TlistToggle<CR>
 "  }
 
 " Formatting {
