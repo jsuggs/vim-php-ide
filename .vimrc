@@ -32,6 +32,10 @@ let mapleader = ','
 
 " Command-T
 map <Leader>t :CommandT /var/www/opensky/src/OpenSky<CR>
+map <Leader>s :CommandT /var/www/opensky/vendor/symfony/src<CR>
+
+" LustyExplorer
+set hidden
 
 " PHP specific commands
 autocmd FileType php noremap <C-X> :w!<CR>:!/usr/bin/php -f %<CR>
@@ -50,7 +54,7 @@ function! ToggleMouse()
 endfunction
 
 " Buffer commands
-nnoremap <C-L> :buffers<CR>:buffer<Space>
+nnoremap <C-S-l> :buffers<CR>:buffer<Space>
 
 " Toggle paste mode
 "nnoremap <F2> :set invpaste paste?<CR>
@@ -70,7 +74,6 @@ map <Leader>m :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 "--------------------
 map     <C-T>       :tabnew<CR>
 map     <C-N>       :!gvim &<CR><CR>
-map     <C-W>       :confirm bdelete<CR>
 set tabpagemax=50
 
 " UI {
