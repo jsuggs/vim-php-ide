@@ -33,6 +33,7 @@ let mapleader = ','
 " Command-T
 map <Leader>t :CommandT /var/www/opensky/src/OpenSky<CR>
 map <Leader>s :CommandT /var/www/opensky/vendor/symfony/src<CR>
+map <Leader>a :CommandT /var/www/opensky/vendor<CR>
 
 " LustyExplorer
 set hidden
