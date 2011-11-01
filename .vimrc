@@ -31,7 +31,7 @@ let Tlist_Use_Right_Window = 1
 let mapleader = ','
 
 " Command-T
-map <Leader>t :CommandT /var/www/opensky/src/OpenSky<CR>
+map <Leader>f :CommandT /var/www/opensky/src/OpenSky<CR>
 map <Leader>s :CommandT /var/www/opensky/vendor/symfony/src<CR>
 map <Leader>a :CommandT /var/www/opensky/vendor<CR>
 
@@ -105,9 +105,8 @@ set tabpagemax=50
     "autocmd VimEnter * NERDTree
     "autocmd BufEnter * NERDTreeMirror
 
-    map <Leader>f :NERDTreeToggle<CR>:NERDTreeMirror<CR>
-    "map <f6> :NERDTreeFind<CR>
-    "nmap <leader>nt :NERDTreeFind<CR>
+    map <Leader>ll :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+    map <Leader>lp :NERDTreeFind<CR>
     
     let NERDTreeShowBookmarks=1
     let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']

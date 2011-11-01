@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/lustyExplorer"]
 	path = .vim/bundle/lustyExplorer
 	url = git://github.com/sjbach/lusty.git
+[submodule ".vim/bundle/grep"]
+	path = .vim/bundle/grep
+	url = git://github.com/vim-scripts/grep.vim.git
