@@ -15,6 +15,7 @@ set spell
 set nobackup
 set nowb
 set noswapfile
+set relativenumber
 
 " Horizontal scroll bar
 set guioptions+=b
@@ -56,6 +57,7 @@ endfunction
 
 " Buffer commands
 nnoremap <C-S-l> :buffers<CR>:buffer<Space>
+map      <C-S>       <C-W>s<CR>
 
 " Toggle paste mode
 "nnoremap <F2> :set invpaste paste?<CR>
@@ -68,6 +70,17 @@ set showmode
 set tags=./tags,./../tags,./*/tags,/var/www/opensky/tags
 map <Leader>m :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
+" Open vim config in split window
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+" Set jj to move to command mode
+inoremap jj <ESC>
+
+" Open split window
+nnoremap <leader>w <C-w>v<C-w>l
+
+" Redraw
+map <C-R> :redraw!<CR>
 
 "--------------------
 " Function: Remap keys to make it more similar to firefox tab functionality
@@ -144,6 +157,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
     set tabstop=4                  " an indentation every four columns
     set softtabstop=4              " let backspace delete indent
     set pastetoggle=<F12>          " pastetoggle (sane indentation on pastes)
+    set relativenumber             " Shows the relative line numbers
 " }
 
 " Backspace
