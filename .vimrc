@@ -157,7 +157,6 @@ vnoremap <C-P> :call PhpDocRange()<CR>
     set tabstop=4                  " an indentation every four columns
     set softtabstop=4              " let backspace delete indent
     set pastetoggle=<F12>          " pastetoggle (sane indentation on pastes)
-    set relativenumber             " Shows the relative line numbers
 " }
 
 " Backspace
@@ -179,3 +178,7 @@ set mat=2 "How many tenths of a second to blink
 
 " Automatically reload the .vimmrc when changed
 autocmd BufWritePost .vimrc source %
+
+
+" Shows the relative line numbers
+set relativenumber
