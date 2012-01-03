@@ -15,15 +15,11 @@ set spell
 set nobackup
 set nowb
 set noswapfile
-set relativenumber
 
 " Horizontal scroll bar
 set guioptions+=b
 
 let g:path_to_search_app = "/usr/bin/ack-grep" 
-
-" Do better syntax highlighting for twig templates
-autocmd BufRead *.twig set syntax=htmljinja
 
 " Make the taglist on the right side
 let Tlist_Use_Right_Window = 1
@@ -39,9 +35,8 @@ map <Leader>a :CommandT /var/www/opensky/vendor<CR>
 " LustyExplorer
 set hidden
 
-" PHP specific commands
-autocmd FileType php noremap <C-X> :w!<CR>:!/usr/bin/php -f %<CR>
-autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
+" Automatically read files when changed from the outside
+set autoread
 
 " Be able to toggle the mouse on/off (for copying)
 nnoremap <Leader>p :call ToggleMouse()<CR>
@@ -80,7 +75,7 @@ inoremap jj <ESC>
 nnoremap <leader>w <C-w>v<C-w>l
 
 " Redraw
-map <C-R> :redraw!<CR>
+map <S-R> :redraw!<CR>
 
 "--------------------
 " Function: Remap keys to make it more similar to firefox tab functionality
@@ -91,7 +86,7 @@ map     <C-N>       :!gvim &<CR><CR>
 set tabpagemax=50
 
 " UI {
-    set number
+    "set number
     color wombat
 
     if has('cmdline_info')
@@ -129,12 +124,6 @@ set tabpagemax=50
     let NERDTreeKeepTreeInNewTab=1
 " }
 
-" PDV
-source ~/.vim/bundle/PDV/.vim/php-doc.vim
-inoremap <C-P> :call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
-" }
 " Tabs {
     set showtabline=2
     map <C-t><up> gT
