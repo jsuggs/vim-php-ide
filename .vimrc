@@ -83,7 +83,7 @@ map <S-R> :redraw!<CR>
 "--------------------
 map     <C-T>       :tabnew<CR>
 map     <C-N>       :!gvim &<CR><CR>
-set tabpagemax=50
+set tabpagemax=500
 
 " UI {
     "set number
@@ -170,4 +170,5 @@ autocmd BufWritePost .vimrc source %
 
 
 " Shows the relative line numbers
-set relativenumber
+"set relativenumber
+set number
