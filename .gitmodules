@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/grep"]
 	path = .vim/bundle/grep
 	url = git://github.com/vim-scripts/grep.vim.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
