@@ -173,3 +173,10 @@ autocmd BufWritePost .vimrc source %
 " Shows the relative line numbers
 "set relativenumber
 set number
+
+" Kill the whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+au ColorScheme * highlight ExtraWhitespace guibg=red
+au BufEnter * match ExtraWhitespace /\s\+$/
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhiteSpace /\s\+$/
