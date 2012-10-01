@@ -37,3 +37,12 @@
 [submodule ".vim/bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/snipmate"]
+	path = .vim/bundle/snipmate
+	url = git@github.com:jsuggs/snipmate.vim.git
+[submodule ".vim/bundle/vim-php-namespace"]
+	path = .vim/bundle/vim-php-namespace
+	url = git@github.com:jsuggs/vim-php-namespace.git
+[submodule ".vim/bundle/vim-symfony"]
+	path = .vim/bundle/vim-symfony
+	url = git@github.com:jsuggs/vim-symfony.git
