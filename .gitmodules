@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/vim-symfony"]
 	path = .vim/bundle/vim-symfony
 	url = git@github.com:jsuggs/vim-symfony.git
+[submodule ".vim/bundle/vim-easytags"]
+	path = .vim/bundle/vim-easytags
+	url = git@github.com:jsuggs/vim-easytags.git

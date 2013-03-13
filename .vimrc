@@ -180,3 +180,9 @@ au ColorScheme * highlight ExtraWhitespace guibg=red
 au BufEnter * match ExtraWhitespace /\s\+$/
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match ExtraWhiteSpace /\s\+$/
+
+" easytags config
+set tags=./tags;
+let g:easytags_dynamic_files = 1
+let g:easytags_auto_update = 0
+let g:easytags_auto_highlight = 0
