@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/vim-easytags"]
 	path = .vim/bundle/vim-easytags
 	url = git@github.com:jsuggs/vim-easytags.git
+[submodule ".vim/bundle/showmarks"]
+	path = .vim/bundle/showmarks
+	url = git@github.com:jsuggs/ShowMarks.git
