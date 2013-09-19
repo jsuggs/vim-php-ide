@@ -186,3 +186,11 @@ set tags=./tags;
 let g:easytags_dynamic_files = 1
 let g:easytags_auto_update = 0
 let g:easytags_auto_highlight = 0
+
+" Convenience functions
+imap <c-u> <esc>viwUi
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" Syntastic
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+map <Leader>c :SyntasticCheck<CR>
