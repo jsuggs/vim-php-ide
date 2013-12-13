@@ -27,12 +27,6 @@ let Tlist_Use_Right_Window = 1
 " Remap the leader
 let mapleader = ','
 
-" Command-T
-map <Leader>f :CommandT /var/www/opensky/src/OpenSky<CR>
-map <Leader>s :CommandT /var/www/opensky/vendor/symfony/src<CR>
-map <Leader>a :CommandT /var/www/opensky/vendor<CR>
-map <Leader>j :CommandT /var/www/opensky/web/js<CR>
-
 " LustyExplorer
 set hidden
 

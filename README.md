@@ -25,3 +25,6 @@ git submodule update```
 * PDV - Generate PHP Documentation
 * Supertab - autocompletion using tab
 * Taglist - View various aspects of the file being edited
+
+## Custom Extensions
+Add any custom mappings into files and put them .vim/plugin
