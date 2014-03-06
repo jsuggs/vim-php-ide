@@ -13,6 +13,7 @@ git submodule update```
 ### PHP Specific
 * &lt;C-X> - Execute the current file (useful for testing executables)
 * &lt;C-L> - Run the PHP linter (php -l) on the current file to check for syntax errors
+* ,c - Run syntax check
 
 ## Included Submodules
 * Ack - Better Searching
@@ -25,6 +26,7 @@ git submodule update```
 * PDV - Generate PHP Documentation
 * Supertab - autocompletion using tab
 * Taglist - View various aspects of the file being edited
+* Syntastic - Syntax checking
 
 ## Custom Extensions
 Add any custom mappings into files and put them .vim/plugin
