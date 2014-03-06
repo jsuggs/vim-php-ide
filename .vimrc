@@ -159,7 +159,6 @@ set mat=2 "How many tenths of a second to blink
 " Automatically reload the .vimmrc when changed
 autocmd BufWritePost .vimrc source %
 
-
 " Shows the relative line numbers
 "set relativenumber
 set number
