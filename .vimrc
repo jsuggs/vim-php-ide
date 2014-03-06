@@ -54,10 +54,6 @@ map      <C-S>       <C-W>s<CR>
 "set pastetoggle=<F2>
 set showmode
 
-" OpenSky Tags
-"set tags=~/.vim/tags
-"set tags=tags;/
-set tags=./tags,./../tags,./*/tags,/var/www/opensky/tags
 map <Leader>m :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Open vim config in split window
