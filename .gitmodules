@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
-[submodule ".vim/bundle/vim-php-debugger"]
-	path = .vim/bundle/vim-php-debugger
-	url = git://github.com/ornicar/vim-php-debugger.git
 [submodule ".vim/bundle/lustyExplorer"]
 	path = .vim/bundle/lustyExplorer
 	url = git://github.com/sjbach/lusty.git
