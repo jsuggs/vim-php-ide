@@ -7,9 +7,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule ".vim/bundle/matchit"]
-	path = .vim/bundle/matchit
-	url = git://github.com/tsaleh/vim-matchit.git
 [submodule ".vim/bundle/PDV"]
 	path = .vim/bundle/PDV
 	url = git://github.com/tobyS/vip.git
